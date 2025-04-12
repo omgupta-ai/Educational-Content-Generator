@@ -1,4 +1,5 @@
 # 📚 Educational Content Generator (AI-Powered)
+![Render Deploy](https://img.shields.io/badge/Live%20App-On%20Render-brightgreen?style=for-the-badge)
 
 Welcome to the **Educational Content Generator** — an AI-powered web application that helps generate comprehensive and structured educational content for any course topic. Whether you're a student, teacher, or lifelong learner, this tool is designed to create personalized learning roadmaps in just one click!
 
@@ -16,7 +17,7 @@ Welcome to the **Educational Content Generator** — an AI-powered web applicati
 
 ## 🚀 Live Demo
 
-👉 **Coming Soon** (Will add once deployed on Render!)
+👉 [Click here to try the app] (https://educational-content-generator-oz7g.onrender.com)
 
 ---
 
