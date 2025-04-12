@@ -48,6 +48,32 @@ Welcome to the **Educational Content Generator** — an AI-powered web applicati
 ## 🧪 Running Locally
 
 ### 1. Clone the repo
-```bash
 git clone https://github.com/yourusername/ai-educational-generator.git
 cd ai-educational-generator
+
+### 2. Install dependencies
+pip install -r requirements.txt
+
+### 3. Add your API key
+Create a .env file and add:
+GROQ_API_KEY=your_actual_key_here
+
+### 4. Run the app
+python main.py
+Visit http://localhost:8080 in your browser!
+
+💡 Future Enhancements
+
+✅ Add quiz generation and flashcards
+📝 PDF export for roadmaps
+📊 Track usage statistics
+🌐 Multilingual support
+
+🙋‍♂️ Author
+Om Manoj Gupta
+MPS in Applied Machine Intelligence @ Northeastern University
+LinkedIn: linkedin.com/in/OmManojGupta
+Email: gupta.om@northeastern.edu
+
+📄 License
+This project is licensed under the MIT License
