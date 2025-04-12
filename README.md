@@ -48,18 +48,23 @@ Welcome to the **Educational Content Generator** — an AI-powered web applicati
 ## 🧪 Running Locally
 
 ### 1. Clone the repo
+```bash
 git clone https://github.com/yourusername/ai-educational-generator.git
 cd ai-educational-generator
 
 ### 2. Install dependencies
+```bash
 pip install -r requirements.txt
 
 ### 3. Add your API key
 Create a .env file and add:
+```bash
 GROQ_API_KEY=your_actual_key_here
 
 ### 4. Run the app
+```bash
 python main.py
+```
 Visit http://localhost:8080 in your browser!
 
 💡 Future Enhancements
