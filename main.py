@@ -1,24 +1,21 @@
-
-from groq import Groq
+import groq
 import os
 from flask import Flask, render_template_string, request
 from dotenv import load_dotenv
 
 load_dotenv()
-
-client = Groq(api_key = os.environ["GROQ_API_KEY"])
-
+groq.api_key = os.environ["GROQ_API_KEY"]
 
 def generate_roadmap(course_title):
     try:
-        response = client.chat.completions.create(
+        response = groq.chat_completion(
             model="meta-llama/llama-4-scout-17b-16e-instruct",
             messages=[
                 {"role": "system", "content": "You are a helpful assistant"},
-                {"role": "user", "content": f"Generate comprehensive educational content for the course titled '{course_title}'. Ensure to include an engaging introduction, covering the history, significance, and applications of the topic, followed by detailed information about course objectives, sample syllabus, measurable learning outcomes, assessment methods, and recommended readings. Utilize a variety of examples and visuals to enhance understanding."}
+                {"role": "user", "content": f"Generate educational content for the course titled '{course_title}'."}
             ]
         )
-        return response.choices[0].message.content
+        return response["choices"][0]["message"]["content"]
     except Exception as e:
         return f"[ERROR] {str(e)}"
 
