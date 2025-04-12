@@ -1,14 +1,12 @@
 import groq
-from groq import Groq
 import os
 from flask import Flask, render_template_string, request
 from dotenv import load_dotenv
 
 load_dotenv()
 
-client = Groq(api_key = os.environ["GROQ_API_KEY"])
+groq.api_key = os.environ["GROQ_API_KEY"]
 
-groq.api_key = os.environ['GROQ_API_KEY']
 
 def generate_roadmap(course_title):
 
