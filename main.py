@@ -8,7 +8,7 @@ load_dotenv()
 groq.api_key = os.environ["GROQ_API_KEY"]
 
 def generate_roadmap(course_title):
-    response = groq.ChatCompletion.create(
+    response = groq.chat_completion(
         model="meta-llama/llama-4-scout-17b-16e-instruct",
         messages=[
             {"role": "system", "content": "You are a helpful assistant"},
